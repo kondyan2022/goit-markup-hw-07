@@ -12,10 +12,14 @@
     refs.modal.classList.toggle('is-hidden');
 
     // My first JS code
-    if (refs.modal.classList.contains('is-hidden')) {
-      bodyScrollLock.enableBodyScroll(document.body);
-    } else {
-      bodyScrollLock.disableBodyScroll(document.body);
+    newFunction();
+
+    function newFunction() {
+      if (refs.modal.classList.contains('is-hidden')) {
+        bodyScrollLock.enableBodyScroll(document.body);
+      } else {
+        bodyScrollLock.disableBodyScroll(document.body);
+      }
     }
   }
 })();
