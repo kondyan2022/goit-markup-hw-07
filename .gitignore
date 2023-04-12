@@ -110,4 +110,6 @@ css/test.css
 .images/svg
 .images/svg/
 .images/svg/**
-
+.images/jpg
+.images/jpg/
+.images/jpg/**

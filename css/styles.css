@@ -33,13 +33,12 @@
   --modal-background-color: #fcfcfc;
   --backdrop-color: rgba(46, 47, 66, 0.4);
 }
-/* *,
+*,
 *::before,
 *::after {
   box-sizing: border-box;
-} included in normalize */
-
-h1,
+}
+included in normalize h1,
 h2,
 h3,
 h4,

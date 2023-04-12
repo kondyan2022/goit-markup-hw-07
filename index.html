@@ -21,7 +21,7 @@
       rel="stylesheet"
     />
     <!-- css add -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/newstyles.css" />
   </head>
   <body>
     <!-- header  -->
@@ -31,24 +31,86 @@
           <a class="logo link" href="./index.html"
             >Web<span class="logo-studio-part">Studio</span></a
           >
-          <ul class="header-menu list">
-            <li class="header-menu-item">
-              <a
-                class="header-menu-item-link link active-page"
-                href="./index.html"
-                >Studio</a
-              >
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-item-link link" href="./portfolio.html"
-                >Portfolio</a
-              >
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-item-link link" href="">Contacts</a>
-            </li>
-          </ul>
+          <div class="modal-menu js-menu-container">
+            <button type="button" class="modal-menu-close js-close-menu">
+              <svg class="modal-menu-close-icon">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="header-menu list">
+              <li class="header-menu-item">
+                <a
+                  class="header-menu-item-link link active-page"
+                  href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="header-menu-item">
+                <a class="header-menu-item-link link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="header-menu-item">
+                <a class="header-menu-item-link link" href="">Contacts</a>
+              </li>
+            </ul>
+
+            <ul class="modal-contact-list list">
+              <li class="modal-contact-item">
+                <a class="modal-contact-item-link link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="modal-contact-item">
+                <a
+                  class="modal-contact-item-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="social-network-list list">
+              <li class="social-network-item">
+                <a href="" class="social-network-item-link link">
+                  <svg class="net-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-network-item">
+                <a href="" class="social-network-item-link link">
+                  <svg class="net-icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-network-item">
+                <a href="" class="social-network-item-link link">
+                  <svg class="net-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-network-item">
+                <a href="" class="social-network-item-link link">
+                  <svg class="net-icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
+        <button class="modal-menu-open js-open-menu" type="button">
+          <svg class="mobile-menu-open-icon">
+            <use
+              href="./images/icons.svg#icon-burger"
+              width="32"
+              height="22"
+            ></use>
+          </svg>
+        </button>
         <address class="header-contact">
           <ul class="header-contact-list list">
             <li class="header-contact-item">
@@ -147,28 +209,55 @@
           <h2 class="wedoing-header second-level-header">What are we doing</h2>
           <ul class="wedoing-list list">
             <li class="wedoing-list-item">
-              <img
-                src="./images/img1.jpg"
-                class="wedoing-list-item-foto"
-                alt="Desktop"
-                width="360"
-              />
+              <picture>
+                <source
+                  srcset="./images/img1.webp 1x, ./images/img1@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
+                />
+                <img
+                  src="./images/img1.jpg"
+                  class="wedoing-list-item-foto"
+                  alt="Desktop"
+                  width="360"
+                />
+              </picture>
             </li>
             <li class="wedoing-list-item">
-              <img
-                src="./images/img2.jpg"
-                class="wedoing-list-item-foto"
-                alt="Smartfon messenger views"
-                width="360"
-              />
+              <picture>
+                <source
+                  srcset="./images/img2.webp 1x, ./images/img2@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
+                />
+                <img
+                  src="./images/img2.jpg"
+                  class="wedoing-list-item-foto"
+                  alt="Smartfon messenger views"
+                  width="360"
+                />
+              </picture>
             </li>
             <li class="wedoing-list-item">
-              <img
-                src="./images/img3.jpg"
-                class="wedoing-list-item-foto"
-                alt="Smartfo n in hand"
-                width="360"
-              />
+              <picture>
+                <source
+                  srcset="./images/img3.webp 1x, ./images/img3@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
+                />
+                <img
+                  src="./images/img3.jpg"
+                  class="wedoing-list-item-foto"
+                  alt="Smartfo n in hand"
+                  width="360"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -179,12 +268,22 @@
           <h2 class="ourteam-header second-level-header">Our Team</h2>
           <ul class="ourteam-list list">
             <li class="ourteam-list-item">
-              <img
-                src="./images/mark.jpg"
-                class="ourteam-person-foto"
-                alt="Mark Guerrero"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="./images/mark.webp 1x, ./images/mark@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/mark.jpg 1x, ./images/mark@2x.jpg 2x"
+                />
+                <img
+                  src="./images/mark.jpg"
+                  class="ourteam-person-foto"
+                  alt="Mark Guerrero"
+                  width="264"
+                />
+              </picture>
+
               <div class="ourteam-person">
                 <h3 class="ourteam-person-name third-level-header">
                   Mark Guerrero
@@ -253,12 +352,19 @@
             </li>
 
             <li class="ourteam-list-item">
-              <img
-                src="./images/tom.jpg"
-                class="ourteam-person-foto"
-                alt="Tom Ford"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="./images/tom.webp 1x, ./images/tom@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source srcset="./images/tom.jpg 1x, ./images/tom@2x.jpg 2x" />
+                <img
+                  src="./images/tom.jpg"
+                  class="ourteam-person-foto"
+                  alt="Tom Ford"
+                  width="264"
+                />
+              </picture>
               <div class="ourteam-person">
                 <h3 class="ourteam-person-name third-level-header">Tom Ford</h3>
                 <p class="ourteam-person-job text">Frontend Developer</p>
@@ -325,12 +431,21 @@
             </li>
 
             <li class="ourteam-list-item">
-              <img
-                src="./images/camila.jpg"
-                class="ourteam-person-foto"
-                alt="Camila Garcia"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="./images/camila.webp 1x, ./images/camila@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/camila.jpg 1x, ./images/camila@2x.jpg 2x"
+                />
+                <img
+                  src="./images/camila.jpg"
+                  class="ourteam-person-foto"
+                  alt="Camila Garcia"
+                  width="264"
+                />
+              </picture>
               <div class="ourteam-person">
                 <h3 class="ourteam-person-name third-level-header">
                   Camila Garcia
@@ -399,12 +514,21 @@
             </li>
 
             <li class="ourteam-list-item">
-              <img
-                src="./images/daniel.jpg"
-                class="ourteam-person-foto"
-                alt="Daniel Wilson"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="./images/daniel.webp 1x, ./images/daniel@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/daniel.jpg 1x, ./images/daniel@2x.jpg 2x"
+                />
+                <img
+                  src="./images/daniel.jpg"
+                  class="ourteam-person-foto"
+                  alt="Daniel Wilson"
+                  width="264"
+                />
+              </picture>
               <div class="ourteam-person">
                 <h3 class="ourteam-person-name third-level-header">
                   Daniel Wilson
@@ -474,6 +598,8 @@
           </ul>
         </div>
       </section>
+
+      <!-- Customer  -->
       <section class="customers">
         <div class="container">
           <h2 class="customers-header second-level-header">customers</h2>
@@ -542,6 +668,7 @@
         </div>
       </section>
     </main>
+    <!-- footer -->
     <footer class="footer">
       <div class="container">
         <div class="left-side-part">
@@ -555,30 +682,30 @@
         </div>
         <div class="central-part">
           <p class="central-part-name">Socal media</p>
-          <ul class="footer-network-list list">
-            <li class="footer-network-item">
-              <a href="" class="footer-network-item-link link">
+          <ul class="social-network-list list">
+            <li class="social-network-item">
+              <a href="" class="social-network-item-link link">
                 <svg class="net-icon">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-network-item">
-              <a href="" class="footer-network-item-link link">
+            <li class="social-network-item">
+              <a href="" class="social-network-item-link link">
                 <svg class="net-icon">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-network-item">
-              <a href="" class="footer-network-item-link link">
+            <li class="social-network-item">
+              <a href="" class="social-network-item-link link">
                 <svg class="net-icon">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-network-item">
-              <a href="" class="footer-network-item-link link">
+            <li class="social-network-item">
+              <a href="" class="social-network-item-link link">
                 <svg class="net-icon">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -605,6 +732,8 @@
         </div>
       </div>
     </footer>
+    <!-- modal form  -->
+
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close type="button" class="modal-button">
@@ -693,6 +822,15 @@
         </form>
       </div>
     </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
